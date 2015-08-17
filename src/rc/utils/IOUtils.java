@@ -79,4 +79,12 @@ public static void deleteEmptyDirecoriesRecursively(ArrayList<File> emptyDirecto
             
     	}
 	}
+public static void main(String[] args) {
+	File dir = new File(" ");
+	if(!dir.mkdirs())
+	{
+		
+	}
+	
+}
 }
