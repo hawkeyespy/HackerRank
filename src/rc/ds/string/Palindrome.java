@@ -1,4 +1,4 @@
-package ds.string;
+package rc.ds.string;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -50,5 +50,12 @@ public class Palindrome {
 			}
 		}
 		return true;
+	}
+	
+	public static boolean isPalindrome_using_stringBuffer(String str)
+	{
+		StringBuffer sb = new StringBuffer(str);
+		String s = sb.reverse().toString();
+		return s.equals(str);
 	}
 }

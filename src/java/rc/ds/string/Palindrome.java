@@ -51,4 +51,11 @@ public class Palindrome {
 		}
 		return true;
 	}
+	
+	public static boolean isPalindrome_using_stringBuffer(String str)
+	{
+		StringBuffer sb = new StringBuffer(str);
+		String s = sb.reverse().toString();
+		return s.equals(str);
+	}
 }
